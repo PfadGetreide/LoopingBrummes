@@ -3,9 +3,9 @@
 // *********************************************************************
 #include <Arduino.h>
 //#include <LiquidCrystal.h>
-#include "src\Control.h" 
-#include "src\Encoder.h" 
-#include "src\Menu.h" 
+#include "Control.h" 
+#include "Encoder.h" 
+#include "Menu.h" 
 #include <Adafruit_NeoPixel.h>
 #include <SPI.h>
 #include <Wire.h>
@@ -54,7 +54,9 @@
 // our new wire object:
 #define WIRE1_SDA       20  // Use GP2 as I2C1 SDA
 #define WIRE1_SCL       21  // Use GP3 as I2C1 SCL
-arduino::MbedI2C Wire1(WIRE1_SDA, WIRE1_SCL);
+#define PIN_WIRE0_SCL  21;
+#define PIN_WIRE0_SDA 20;
+//arduino::MbedI2C Wire1(WIRE1_SDA, WIRE1_SCL);
 
 
 
@@ -71,7 +73,7 @@ bool encoderMoved_ = false;
 
 Control CNTRL(CNRTL_PIN_ONE, CNRTL_PIN_TWO);
 Encoder ENCD(ENCODER_A, ENCODER_B, ENCODER_BTN);
-Adafruit_SSD1306 display(WIDTH, HEIGHT, &Wire1, OLED_RESET);
+Adafruit_SSD1306 display(WIDTH, HEIGHT, &Wire, OLED_RESET);
 Menu MENU(&ENCD, &display);
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMBER_OF_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
 
