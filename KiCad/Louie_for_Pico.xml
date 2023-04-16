@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\mazze\Documents\KiCad\Projekte\Looping Louie\Louie_for_Pico\Louie_for_Pico\Louie_for_Pico.kicad_sch</source>
+    <date>13.10.2022 09:55:17</date>
+    <tool>Eeschema (6.0.4)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Louie_for_Pico.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Brd1">
+      <value>SSD1306</value>
+      <footprint>SSD1306:SSD1306-0.91-OLED-4pin-128x32</footprint>
+      <libsource lib="0.91in OLED" part="SSD1306" description="SSD1306 OLED"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4c667c01-9714-47fe-9fa0-01f70b232f05</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e15dffc0-c1e1-4cdf-a30d-1d1f51f20d3e</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>28fddfbe-d2c5-4b0f-9bca-621d9d254eff</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>1N5819</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.vishay.com/docs/88525/1n5817.pdf</datasheet>
+      <libsource lib="Diode" part="1N5819" description="40V 1A Schottky Barrier Rectifier Diode, DO-41"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33b81c04-76c4-4c2e-8970-a0e8034086d4</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>TB67H451AFNG,EL</value>
+      <footprint>Samacsys:SOIC127P600X170-9N</footprint>
+      <datasheet>https://www.arrow.com/en/products/tb67h451afngel/toshiba?region=nac</datasheet>
+      <fields>
+        <field name="Description">Motor/Motion/Ignition Controllers &amp; Drivers 50V/3A BRUSHED MOTOR DRIVER</field>
+        <field name="Height">1.7</field>
+        <field name="Manufacturer_Name">Toshiba</field>
+        <field name="Manufacturer_Part_Number">TB67H451AFNG,EL</field>
+        <field name="Mouser Part Number">757-TB67H451AFNGEL</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Toshiba/TB67H451AFNGEL?qs=Wj%2FVkw3K%252BMArV7aRaH6JgA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="TB67H451AFNG,EL" description="Motor/Motion/Ignition Controllers &amp; Drivers 50V/3A BRUSHED MOTOR DRIVER"/>
+      <property name="Description" value="Motor/Motion/Ignition Controllers &amp; Drivers 50V/3A BRUSHED MOTOR DRIVER"/>
+      <property name="Height" value="1.7"/>
+      <property name="Mouser Part Number" value="757-TB67H451AFNGEL"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Toshiba/TB67H451AFNGEL?qs=Wj%2FVkw3K%252BMArV7aRaH6JgA%3D%3D"/>
+      <property name="Manufacturer_Name" value="Toshiba"/>
+      <property name="Manufacturer_Part_Number" value="TB67H451AFNG,EL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>702a6f21-33b1-4484-862f-190db44b3fe3</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x03</value>
+      <footprint>Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6b9d0ff5-a13e-41e0-a4c5-87b0fa2172d9</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>10u</value>
+      <footprint>Inductor_SMD:L_Taiyo-Yuden_NR-40xx_HandSoldering</footprint>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>84b48d7b-7b08-4382-80cf-44783175ef20</tstamps>
+    </comp>
+    <comp ref="M1">
+      <value>~</value>
+      <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Motor" part="Motor_DC" description="DC Motor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4708d09-7ba1-402c-9e48-47aea89c0016</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>31600</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7b94ddb-be34-430f-a4d9-1efc5f3c326f</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>5100</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f883baa-0d86-4cee-b6e5-ba16822292c9</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03c6617e-6985-4131-9de3-59135d04bd90</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>5k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c93f533-ba91-4c00-98c2-92707e745f6e</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>5k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>125a57c7-fdd3-45fe-a48f-f06db6147244</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <footprint>Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7b6c6d76-51ce-45ad-8fc0-7f7dbb980e64</tstamps>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_Push</value>
+      <footprint>Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7565c3ae-d3c1-41c3-8913-2e2b38d27c34</tstamps>
+    </comp>
+    <comp ref="SW4">
+      <value>SW_Push</value>
+      <footprint>Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5b3ebb6d-fd19-4ca4-aa9e-83349c18fd9e</tstamps>
+    </comp>
+    <comp ref="SW5">
+      <value>SW_Push</value>
+      <footprint>Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6981bbf-794c-4fd1-a46f-b4e4a41f0d16</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>AP3012</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AP3012.pdf</datasheet>
+      <libsource lib="Regulator_Switching" part="AP3012" description="500mA, Adjustable Step-Up Voltage Regulator, 1.5MHz Frequency, SOT-23-5"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9516375-9cac-4899-a9f9-afd4f657871e</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>Pico</value>
+      <footprint>Pi Pico:RPi_Pico_SMD_TH</footprint>
+      <libsource lib="MCU_RaspberryPi_and_Boards" part="Pico" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5bffc67e-1f19-4ce8-a04b-5942212e56a5</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>EC12D1564402</value>
+      <footprint>Samacsys:EC12D1564402</footprint>
+      <datasheet>https://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC12E/EC12D1564402.html</datasheet>
+      <fields>
+        <field name="Description">ALPS - EC12D1564402 - ENCODER, VERTICAL, 12MM, 30DET,15PPR</field>
+        <field name="Height">17.5</field>
+        <field name="Manufacturer_Name">ALPS Electric</field>
+        <field name="Manufacturer_Part_Number">EC12D1564402</field>
+        <field name="Mouser Part Number">688-EC12D1564402</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Alps-Alpine/EC12D1564402?qs=6EGMNY9ZYDRfW0TWFqolEw%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="EC12D1564402" description="ALPS - EC12D1564402 - ENCODER, VERTICAL, 12MM, 30DET,15PPR"/>
+      <property name="Description" value="ALPS - EC12D1564402 - ENCODER, VERTICAL, 12MM, 30DET,15PPR"/>
+      <property name="Height" value="17.5"/>
+      <property name="Mouser Part Number" value="688-EC12D1564402"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Alps-Alpine/EC12D1564402?qs=6EGMNY9ZYDRfW0TWFqolEw%3D%3D"/>
+      <property name="Manufacturer_Name" value="ALPS Electric"/>
+      <property name="Manufacturer_Part_Number" value="EC12D1564402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Louie_for_Pico.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99852fb7-1e48-469c-b73a-cb174c1f8aed</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="0.91in OLED" part="SSD1306">
+      <description>SSD1306 OLED</description>
+      <footprints>
+        <fp>SSD1306-128x64_OLED:SSD1306</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Brd</field>
+        <field name="Value">SSD1306</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="VCC" type="input"/>
+        <pin num="3" name="SCL" type="input"/>
+        <pin num="4" name="SDA" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N5819">
+      <description>40V 1A Schottky Barrier Rectifier Diode, DO-41</description>
+      <docs>http://www.vishay.com/docs/88525/1n5817.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N5819</field>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+        <field name="Datasheet">http://www.vishay.com/docs/88525/1n5817.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_RaspberryPi_and_Boards" part="Pico">
+      <fields>
+        <field name="Reference">U2</field>
+        <field name="Value">Pico</field>
+        <field name="Footprint">RPi_Pico:RPi_Pico_SMD_TH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO0" type="bidirectional"/>
+        <pin num="2" name="GPIO1" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="GPIO2" type="bidirectional"/>
+        <pin num="5" name="GPIO3" type="bidirectional"/>
+        <pin num="6" name="GPIO4" type="bidirectional"/>
+        <pin num="7" name="GPIO5" type="bidirectional"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="GPIO6" type="bidirectional"/>
+        <pin num="10" name="GPIO7" type="bidirectional"/>
+        <pin num="11" name="GPIO8" type="bidirectional"/>
+        <pin num="12" name="GPIO9" type="bidirectional"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="GPIO10" type="bidirectional"/>
+        <pin num="15" name="GPIO11" type="bidirectional"/>
+        <pin num="16" name="GPIO12" type="bidirectional"/>
+        <pin num="17" name="GPIO13" type="bidirectional"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="19" name="GPIO14" type="bidirectional"/>
+        <pin num="20" name="GPIO15" type="bidirectional"/>
+        <pin num="21" name="GPIO16" type="bidirectional"/>
+        <pin num="22" name="GPIO17" type="bidirectional"/>
+        <pin num="23" name="GND" type="power_in"/>
+        <pin num="24" name="GPIO18" type="bidirectional"/>
+        <pin num="25" name="GPIO19" type="bidirectional"/>
+        <pin num="26" name="GPIO20" type="bidirectional"/>
+        <pin num="27" name="GPIO21" type="bidirectional"/>
+        <pin num="28" name="GND" type="power_in"/>
+        <pin num="29" name="GPIO22" type="bidirectional"/>
+        <pin num="30" name="RUN" type="input"/>
+        <pin num="31" name="GPIO26_ADC0" type="bidirectional"/>
+        <pin num="32" name="GPIO27_ADC1" type="bidirectional"/>
+        <pin num="33" name="AGND" type="power_in"/>
+        <pin num="34" name="GPIO28_ADC2" type="bidirectional"/>
+        <pin num="35" name="ADC_VREF" type="unspecified"/>
+        <pin num="36" name="3V3" type="power_out"/>
+        <pin num="37" name="3V3_EN" type="input"/>
+        <pin num="38" name="GND" type="power_in"/>
+        <pin num="39" name="VSYS" type="unspecified"/>
+        <pin num="40" name="VBUS" type="power_in"/>
+        <pin num="41" name="SWCLK" type="input"/>
+        <pin num="42" name="GND" type="power_in"/>
+        <pin num="43" name="SWDIO" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Motor" part="Motor_DC">
+      <description>DC Motor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>PinHeader*P2.54mm*</fp>
+        <fp>TerminalBlock*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">Motor_DC</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="AP3012">
+      <description>500mA, Adjustable Step-Up Voltage Regulator, 1.5MHz Frequency, SOT-23-5</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AP3012.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP3012</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AP3012.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="~{SHDN}" type="input"/>
+        <pin num="5" name="IN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="EC12D1564402">
+      <description>ALPS - EC12D1564402 - ENCODER, VERTICAL, 12MM, 30DET,15PPR</description>
+      <docs>https://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC12E/EC12D1564402.html</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">EC12D1564402</field>
+        <field name="Footprint">EC12D1564402</field>
+        <field name="Datasheet">https://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC12E/EC12D1564402.html</field>
+        <field name="Description">ALPS - EC12D1564402 - ENCODER, VERTICAL, 12MM, 30DET,15PPR</field>
+        <field name="Height">17.5</field>
+        <field name="Mouser Part Number">688-EC12D1564402</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Alps-Alpine/EC12D1564402?qs=6EGMNY9ZYDRfW0TWFqolEw%3D%3D</field>
+        <field name="Manufacturer_Name">ALPS Electric</field>
+        <field name="Manufacturer_Part_Number">EC12D1564402</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="A1" type="passive"/>
+        <pin num="B1" name="B1" type="passive"/>
+        <pin num="C1" name="C1" type="passive"/>
+        <pin num="D1" name="D1" type="passive"/>
+        <pin num="E1" name="E1" type="passive"/>
+        <pin num="MH1" name="MH1" type="passive"/>
+        <pin num="MH2" name="MH2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="TB67H451AFNG,EL">
+      <description>Motor/Motion/Ignition Controllers &amp; Drivers 50V/3A BRUSHED MOTOR DRIVER</description>
+      <docs>https://www.arrow.com/en/products/tb67h451afngel/toshiba?region=nac</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">TB67H451AFNG,EL</field>
+        <field name="Footprint">SOIC127P600X170-9N</field>
+        <field name="Datasheet">https://www.arrow.com/en/products/tb67h451afngel/toshiba?region=nac</field>
+        <field name="Description">Motor/Motion/Ignition Controllers &amp; Drivers 50V/3A BRUSHED MOTOR DRIVER</field>
+        <field name="Height">1.7</field>
+        <field name="Mouser Part Number">757-TB67H451AFNGEL</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Toshiba/TB67H451AFNGEL?qs=Wj%2FVkw3K%252BMArV7aRaH6JgA%3D%3D</field>
+        <field name="Manufacturer_Name">Toshiba</field>
+        <field name="Manufacturer_Part_Number">TB67H451AFNG,EL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="IN2" type="passive"/>
+        <pin num="3" name="IN1" type="passive"/>
+        <pin num="4" name="VREF" type="passive"/>
+        <pin num="5" name="VM" type="passive"/>
+        <pin num="6" name="OUT1" type="passive"/>
+        <pin num="7" name="RS" type="passive"/>
+        <pin num="8" name="OUT2" type="passive"/>
+        <pin num="9" name="THERMAL_PAD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="0.91in OLED">
+      <uri>C:\Users\mazze\Documents\KiCad\6.0\3rdparty/KiCad-SSD1306-128x64-master/library/SSD1306-128x64_OLED.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Diode.kicad_sym</uri>
+    </library>
+    <library logical="MCU_RaspberryPi_and_Boards">
+      <uri>C:/Users/mazze/Documents/KiCad/6.0/symbols/RPi-Pico-R3-PUBLIC-20200119/MCU_RaspberryPi_and_Boards.lib</uri>
+    </library>
+    <library logical="Motor">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Motor.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Switching.kicad_sym</uri>
+    </library>
+    <library logical="SamacSys_Parts">
+      <uri>C:\Users\mazze\Documents\KiCad\6.0\3rdparty/SamacSys_Parts.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Switch.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="Brd1" pin="2" pinfunction="VCC" pintype="input"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U2" pin="36" pinfunction="3V3" pintype="power_out"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="IN" pintype="power_in"/>
+      <node ref="U2" pin="40" pinfunction="VBUS" pintype="power_in"/>
+    </net>
+    <net code="3" name="+9V">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="IC1" pin="5" pinfunction="VM" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/BTNONE">
+      <node ref="SW3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="21" pinfunction="GPIO16" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/BTNTHREE">
+      <node ref="SW5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="24" pinfunction="GPIO18" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/BTNTWO">
+      <node ref="SW4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="22" pinfunction="GPIO17" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/ENA">
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="GPIO10" pintype="bidirectional"/>
+      <node ref="U3" pin="A1" pinfunction="A1" pintype="passive"/>
+    </net>
+    <net code="8" name="/ENB">
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="GPIO11" pintype="bidirectional"/>
+      <node ref="U3" pin="B1" pinfunction="B1" pintype="passive"/>
+    </net>
+    <net code="9" name="/ENSW">
+      <node ref="U2" pin="16" pinfunction="GPIO12" pintype="bidirectional"/>
+      <node ref="U3" pin="E1" pinfunction="E1" pintype="passive"/>
+    </net>
+    <net code="10" name="/LEDdata">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="GPIO3" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/RST">
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="30" pinfunction="RUN" pintype="input"/>
+    </net>
+    <net code="12" name="/SCL">
+      <node ref="Brd1" pin="3" pinfunction="SCL" pintype="input"/>
+      <node ref="U2" pin="27" pinfunction="GPIO21" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="/SDA">
+      <node ref="Brd1" pin="4" pinfunction="SDA" pintype="input"/>
+      <node ref="U2" pin="26" pinfunction="GPIO20" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/SPD1">
+      <node ref="IC1" pin="3" pinfunction="IN1" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="GPIO6" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/SPD2">
+      <node ref="IC1" pin="2" pinfunction="IN2" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="GPIO7" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/STPEN">
+      <node ref="U1" pin="4" pinfunction="~{SHDN}" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="GPIO2" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="GND">
+      <node ref="Brd1" pin="1" pinfunction="GND" pintype="input"/>
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="IC1" pin="7" pinfunction="RS" pintype="passive"/>
+      <node ref="IC1" pin="9" pinfunction="THERMAL_PAD" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="13" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="18" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="23" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="28" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="33" pinfunction="AGND" pintype="power_in"/>
+      <node ref="U2" pin="38" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="42" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="C1" pinfunction="C1" pintype="passive"/>
+      <node ref="U3" pin="D1" pinfunction="D1" pintype="passive"/>
+      <node ref="U3" pin="MH1" pinfunction="MH1" pintype="passive"/>
+      <node ref="U3" pin="MH2" pinfunction="MH2" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="SW" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(IC1-Pad4)">
+      <node ref="IC1" pin="4" pinfunction="VREF" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(IC1-Pad6)">
+      <node ref="IC1" pin="6" pinfunction="OUT1" pintype="passive"/>
+      <node ref="M1" pin="2" pinfunction="-" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(IC1-Pad8)">
+      <node ref="IC1" pin="8" pinfunction="OUT2" pintype="passive"/>
+      <node ref="M1" pin="1" pinfunction="+" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="23" name="unconnected-(U2-Pad1)">
+      <node ref="U2" pin="1" pinfunction="GPIO0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U2-Pad2)">
+      <node ref="U2" pin="2" pinfunction="GPIO1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U2-Pad6)">
+      <node ref="U2" pin="6" pinfunction="GPIO4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U2-Pad7)">
+      <node ref="U2" pin="7" pinfunction="GPIO5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U2-Pad11)">
+      <node ref="U2" pin="11" pinfunction="GPIO8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U2-Pad12)">
+      <node ref="U2" pin="12" pinfunction="GPIO9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U2-Pad17)">
+      <node ref="U2" pin="17" pinfunction="GPIO13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U2-Pad19)">
+      <node ref="U2" pin="19" pinfunction="GPIO14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U2-Pad20)">
+      <node ref="U2" pin="20" pinfunction="GPIO15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U2-Pad25)">
+      <node ref="U2" pin="25" pinfunction="GPIO19" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U2-Pad29)">
+      <node ref="U2" pin="29" pinfunction="GPIO22" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U2-Pad31)">
+      <node ref="U2" pin="31" pinfunction="GPIO26_ADC0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U2-Pad32)">
+      <node ref="U2" pin="32" pinfunction="GPIO27_ADC1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U2-Pad34)">
+      <node ref="U2" pin="34" pinfunction="GPIO28_ADC2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U2-Pad35)">
+      <node ref="U2" pin="35" pinfunction="ADC_VREF" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U2-Pad37)">
+      <node ref="U2" pin="37" pinfunction="3V3_EN" pintype="input+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U2-Pad39)">
+      <node ref="U2" pin="39" pinfunction="VSYS" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U2-Pad41)">
+      <node ref="U2" pin="41" pinfunction="SWCLK" pintype="input+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U2-Pad43)">
+      <node ref="U2" pin="43" pinfunction="SWDIO" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

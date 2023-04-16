@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "SSD1306")(type "KiCad")(uri "${KICAD6_3RD_PARTY}/footprints/SSD1306")(options "")(descr ""))
+)

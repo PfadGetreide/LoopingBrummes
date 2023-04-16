@@ -44,19 +44,10 @@
 #define DELAY_PIN 2 //enable step up
 
 // display i2c pins
-//SDA 20
-//SCL 21 
-// // //wurde in C:\Users\mazze\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\2.4.1\variants\generic\pins_arduino geandert
-//C:\Users\mazze\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\2.7.1\variants\rpipico
+//changed pins here
+//C:\Users\user\.platformio\packages\framework-arduinopico\variants\rpipico
 //#define PIN_WIRE0_SDA  (20u)
 //#define PIN_WIRE0_SCL  (21u)
-// default "Wire" object: SDA = GP4, SCL = GP5, I2C0 peripheral
-// our new wire object:
-#define WIRE1_SDA       20  // Use GP2 as I2C1 SDA
-#define WIRE1_SCL       21  // Use GP3 as I2C1 SCL
-#define PIN_WIRE0_SCL  21;
-#define PIN_WIRE0_SDA 20;
-//arduino::MbedI2C Wire1(WIRE1_SDA, WIRE1_SCL);
 
 
 
