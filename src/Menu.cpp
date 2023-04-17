@@ -28,8 +28,6 @@ void Menu::displayMenu(){
   menuDisplay_->clearDisplay();
   menuDisplay_->setCursor(0, 0);
   menuDisplay_->setTextSize(1);
-  //menuDisplay_->
-  //menuDisplay_->startscrollright(0x00, 0x07);
   menuDisplay_->println("Looping Brummes!");
   menuDisplay_->display();
 
