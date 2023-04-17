@@ -15,4 +15,5 @@ This repository mod consist of the following:
 </ul> 
 
 One part of the project is a custom PCB containing a DC-motor controller, a 
-step-up converter needed for more speed, a SSD1306 display, a rotor
+step-up converter needed for more speed, a SSD1306 display, a rotary encoder for
+menu navigation and a place to solder down a RaspberryPi Pico.
