@@ -11,3 +11,4 @@ This repository mod consist of the following:
   <li>3D-models</li>
 </ul> 
 
+One part of the project is a custom PCB containing a DC-motor controller, a step-up converter needed for more speed,
