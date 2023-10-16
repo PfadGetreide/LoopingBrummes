@@ -15,7 +15,7 @@ Encoder::Encoder(uint8_t a_inputPinA, uint8_t a_inputPinB, uint8_t a_buttonPin)
 
     lastInterruptTime_ = 0;
     interruptTime_ = 0;
-    debounceTime_ = 5;
+    debounceTime_ = 20;
 
     maxMenuItems_ = 3;
 
@@ -26,7 +26,7 @@ Encoder::Encoder(uint8_t a_inputPinA, uint8_t a_inputPinB, uint8_t a_buttonPin)
 
 void Encoder::interruptA()
 {
-    interruptTime_ = millis();
+
     // debounce
     if (interruptTime_ - lastInterruptTime_ > debounceTime_)
     {
@@ -35,36 +35,45 @@ void Encoder::interruptA()
         if (digitalRead(inputPinA_) != pinAState_)
         {
             pinAState_ = !pinAState_;
-            if (pinAState_ && !pinBState_)
+            // if (pinAState_ && !pinBState_)
+            //{
+            if (speedSelectState_)
             {
-                if (speedSelectState_)
+                speedPercentage_ += 5;
+                if (speedPercentage_ > 100)
                 {
-                    speedPercentage_ += 5;
-                    if (speedPercentage_ > 100)
-                    {
-                        speedPercentage_ = 0;
-                    }
-                    encoderSpeed_ = static_cast<uint8_t>(
-                        (static_cast<float>(speedPercentage_) / 100) * 255);
-                    // Serial.println(encoderSpeed_);
+                    speedPercentage_ = 0;
                 }
-                else
-                {
-                    menuPos_ += 1;
-                    if (menuPos_ >= maxMenuItems_)
-                    {
-                        menuPos_ = 0;
-                    }
-                }
-                // Serial.println(menuPos_);
+                encoderSpeed_ = static_cast<uint8_t>(
+                    (static_cast<float>(speedPercentage_) / 100) * 255);
+                // Serial.println(encoderSpeed_);
             }
+            else
+            {
+                menuPos_ += 1;
+                if (menuPos_ >= maxMenuItems_)
+                {
+                    menuPos_ = 0;
+                }
+            }
+            // Serial.println(menuPos_);
+            //}
             lastInterruptTime_ = interruptTime_;
         }
     }
+    Serial.println("A ");
+    Serial.print("A State: ");
+    Serial.println(pinAState_);
+    Serial.print("B State: ");
+    Serial.println(pinBState_);
+    Serial.print("Menu Position: ");
+    Serial.println(menuPos_);
+    interruptTime_ = millis();
 }
 
 void Encoder::interruptB()
 {
+
     interruptTime_ = millis();
     // debounce
     if (interruptTime_ - lastInterruptTime_ > debounceTime_)
@@ -74,32 +83,39 @@ void Encoder::interruptB()
         if (digitalRead(inputPinB_) != pinBState_)
         {
             pinBState_ = !pinBState_;
-            if (pinBState_ && !pinAState_)
+            // if (pinBState_ && !pinAState_)
+            // {
+            if (speedSelectState_)
             {
-                if (speedSelectState_)
+                speedPercentage_ -= 5;
+                if (speedPercentage_ > 100)
                 {
-                    speedPercentage_ -= 5;
-                    if (speedPercentage_ > 100)
-                    {
-                        speedPercentage_ = 100;
-                    }
-                    encoderSpeed_ = static_cast<uint8_t>(
-                        (static_cast<float>(speedPercentage_) / 100) * 255);
-                    // Serial.println(encoderSpeed_);
+                    speedPercentage_ = 100;
                 }
-                else
+                encoderSpeed_ = static_cast<uint8_t>(
+                    (static_cast<float>(speedPercentage_) / 100) * 255);
+                // Serial.println(encoderSpeed_);
+            }
+            else
+            {
+                // cycle to the first menu item
+                menuPos_ -= 1;
+                if (menuPos_ >= maxMenuItems_)
                 {
-                    // cycle to the first menu item
-                    menuPos_ -= 1;
-                    if (menuPos_ >= maxMenuItems_)
-                    {
-                        menuPos_ = maxMenuItems_ - 1;
-                    }
+                    menuPos_ = maxMenuItems_ - 1;
                 }
             }
+            //}
             lastInterruptTime_ = interruptTime_;
         }
     }
+    Serial.println("b ");
+    Serial.print("A State: ");
+    Serial.println(pinAState_);
+    Serial.print("B State: ");
+    Serial.println(pinBState_);
+    Serial.print("Menu Position: ");
+    Serial.println(menuPos_);
 }
 
 void Encoder::interruptBTN()
@@ -126,6 +142,9 @@ void Encoder::interruptBTN()
             reverseONencoder_ = !reverseONencoder_;
         }
     }
+    // Debugging-Ausgabe
+    Serial.print("Menu Position: ");
+    Serial.println(menuPos_);
 }
 
 uint8_t Encoder::getMenuPosition() { return menuPos_; }

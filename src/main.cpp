@@ -78,8 +78,8 @@ void setup()
     pinMode(DELAY_PIN, OUTPUT);
 
     // serial init, only needed for testing purposses
-    // Serial.begin(9600);
-    // Serial.print("Morsche");
+    Serial.begin(9600);
+    Serial.print("Morsche");
 
     // start display
     display.begin(SSD1306_SWITCHCAPVCC, ADDRESS);
