@@ -114,49 +114,75 @@ void setup()
 
 void loop()
 {
-
+    // Check if the encoder was moved
     if (encoderMoved_)
     {
+        // Display the menu
         MENU.displayMenu();
+
+        // Reset the encoder moved flag
         encoderMoved_ = false;
     }
-    CNTRL.setSpeed(ENCD.getSpeed(), ENCD.getRandomState(),
-                   ENCD.getReverseState());
+
+    // Set the speed and direction of the LEDs based on the encoder state
+    CNTRL.setSpeed(ENCD.getSpeed(), ENCD.getRandomState(), ENCD.getReverseState());
+
+    // Wait for 100ms
     delay(100);
+
+    // If the direction is forward
     if (CNTRL.getDirection())
     {
+        // For each LED
         for (int i = 0; i < NUMBER_OF_LEDS; i++)
-        { // For each pixel...
-            pixels.setPixelColor(i, pixels.Color(CNTRL.getSpeed(),
-                                                 (255 - CNTRL.getSpeed()),
-                                                 (255 - CNTRL.getSpeed())));
+        {
+            // Set the color based on the speed
+            pixels.setPixelColor(i, pixels.Color(CNTRL.getSpeed(), (255 - CNTRL.getSpeed()), (255 - CNTRL.getSpeed())));
+
+            // Update the LED
             pixels.show();
         }
     }
-    else
+    else // If the direction is backward
     {
+        // For each LED
         for (int i = 0; i < NUMBER_OF_LEDS; i++)
-        { // For each pixel...
-            pixels.setPixelColor(i, pixels.Color((255 - CNTRL.getSpeed()),
-                                                 CNTRL.getSpeed(),
-                                                 (255 - CNTRL.getSpeed())));
+        {
+            // Set the color based on the speed
+            pixels.setPixelColor(i, pixels.Color((255 - CNTRL.getSpeed()), CNTRL.getSpeed(), (255 - CNTRL.getSpeed())));
+
+            // Update the LED
             pixels.show();
         }
     }
 }
 
+// Interrupt function for encoder pin A
 void interruptA()
 {
+    // Set the encoder moved flag
     encoderMoved_ = true;
+
+    // Call the encoder interrupt function for pin A
     ENCD.interruptA();
 }
+
+// Interrupt function for encoder pin B
 void interruptB()
 {
+    // Set the encoder moved flag
     encoderMoved_ = true;
+
+    // Call the encoder interrupt function for pin B
     ENCD.interruptB();
 }
+
+// Interrupt function for encoder button
 void interruptBTN()
 {
+    // Set the encoder moved flag
     encoderMoved_ = true;
+
+    // Call the encoder interrupt function for the button
     ENCD.interruptBTN();
 }

@@ -21,22 +21,27 @@ private:
     uint8_t speedPercentage_;
 
     uint8_t maxMenuItems_;
-    // volatile uint8_t lastReportedEncoderPos_;
 
     // debouncer Variables
     uint32_t interruptTime_;
     uint32_t lastInterruptTime_;
     uint8_t debounceTime_;
 
+    // Flags for encoder behavior
     bool randomONencoder_;
     bool reverseONencoder_;
     bool speedSelectState_;
 
 public:
+    // Constructor
     Encoder(uint8_t a_inputPinA, uint8_t a_inputPinB, uint8_t a_buttonPin);
+
+    // Interrupt handlers
     void interruptA();
     void interruptB();
     void interruptBTN();
+
+    // Getters for encoder states
     uint8_t getMenuPosition();
     bool getRandomState();
     bool getReverseState();
